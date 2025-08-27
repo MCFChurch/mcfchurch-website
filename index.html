@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mainstreet Christian Family Church</title>
+  <meta name="description" content="Mainstreet Christian Family Church — worship, community, and service in Quezon City." />
+
+  <!-- Calligraphy font for the church name -->
+  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Mainstreet Christian Family Church" />
+  <meta property="og:description" content="Join us in worship and fellowship. 127 Quirino hwy., Baesa, Quezon City." />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">✛</div>
+        <div>
+          <h1 class="church-name">Mainstreet Christian Family Church</h1>
+          <p class="tagline">Worship • Word • Fellowship</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+        <ul class="nav-list" id="desktopNav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn" href="#give">Give</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="mobile-nav" hidden>
+      <ul>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#events" onclick="closeMenu()">Events</a></li>
+        <li><a href="#sermons" onclick="closeMenu()">Sermons</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        <li><a class="btn" href="#give" onclick="closeMenu()">Give</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <h2>Jesus at the center of everything</h2>
+        <p>Welcome to Mainstreet Christian Family Church. Come as you are — worship, learn, and grow with us.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#services">Join Us This Sunday</a>
+          <a class="btn ghost" href="#contact">Request Prayer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section container">
+      <div class="grid-2">
+        <div>
+          <h3>Service Times</h3>
+          <ul class="service-list">
+            <li><strong>Sunday Worship</strong><span>10:00 AM — Main Sanctuary</span></li>
+            <li><strong>Midweek Prayer</strong><span>Wednesday 7:00 PM — Chapel</span></li>
+            <li><strong>Youth Gathering</strong><span>Saturday 4:00 PM — Youth Hall</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <p class="muted">127 Quirino hwy., Baesa, Quezon City</p>
+          <div class="map-wrap" aria-hidden="true">
+            <!-- Replace iframe src with precise embed from Google Maps if you want -->
+            <iframe
+              src="https://maps.google.com/maps?q=127%20Quirino%20hwy.,%20Baesa,%20Quezon%20city&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section alt container">
+      <h3>About Us</h3>
+      <p>Mainstreet Christian Family Church is a Bible-believing community committed to worship, the Word, and works of compassion. We exist to glorify God and make disciples in Quezon City and beyond.</p>
+
+      <div class="three-cols">
+        <article>
+          <h4>Mission</h4>
+          <p>To know Christ and make Him known.</p>
+        </article>
+        <article>
+          <h4>Vision</h4>
+          <p>A transformed community living out the Gospel.</p>
+        </article>
+        <article>
+          <h4>Core</h4>
+          <p>Worship • Discipleship • Outreach</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="section container">
+      <div class="section-head">
+        <h3>Upcoming Events</h3>
+        <a href="#" class="muted">View all</a>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop')"></div>
+          <div class="card-body">
+            <p class="date">Sep 15, 2025</p>
+            <h4>Community Outreach</h4>
+            <p>Food distribution and prayer in the neighborhood.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop')"></div>
+          <div class="card-body">
+            <p class="date">Oct 05, 2025</p>
+            <h4>Youth Night</h4>
+            <p>Games, worship, and Word for the youth.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=1200&auto=format&fit=crop')"></div>
+          <div class="card-body">
+            <p class="date">Nov 24, 2025</p>
+            <h4>Worship Workshop</h4>
+            <p>Training for worship leaders and musicians.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sermons -->
+    <section id="sermons" class="section alt container">
+      <div class="section-head">
+        <h3>Latest Sermons</h3>
+        <a class="muted" href="#">View archive</a>
+      </div>
+
+      <div class="grid-2">
+        <div class="video-wrap">
+          <!-- Replace VIDEO_ID with your YouTube video id later -->
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sermon video" frameborder="0" allowfullscreen loading="lazy"></iframe>
+          <h4>Grace That Transforms</h4>
+          <p class="muted">Philippians 4:13 — Ptr. Ramon</p>
+        </div>
+
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Sermon video" frameborder="0" allowfullscreen loading="lazy"></iframe>
+          <h4>Faith on the Narrow Path</h4>
+          <p class="muted">Matthew 7:13–14 — Ptr. Ramon</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Give -->
+    <section id="give" class="section container">
+      <h3>Give</h3>
+      <p>Your generosity fuels ministry and outreach. Thank you!</p>
+      <div class="give-actions">
+        <a class="btn" href="https://paypal.me/" target="_blank" rel="noopener">Give via PayPal</a>
+        <button class="btn ghost" onclick="alert('Add your GCash link or QR here')">Give via GCash</button>
+      </div>
+      <p class="muted small">Replace PayPal link with your actual donation link.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt container">
+      <div class="grid-2">
+        <div>
+          <h3>Contact & Prayer</h3>
+          <p class="muted">We’d love to pray with you. Fill the form below or contact us directly.</p>
+
+          <!-- Replace form action with your Formspree endpoint or other provider -->
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+            <label>
+              <span class="label">Name</span>
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+
+            <label>
+              <span class="label">Email</span>
+              <input type="email" name="_replyto" required placeholder="you@example.com" />
+            </label>
+
+            <label>
+              <span class="label">Message / Prayer Request</span>
+              <textarea name="message" rows="5" placeholder="How can we pray for you?"></textarea>
+            </label>
+
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+
+        <aside>
+          <h4>Visit Us</h4>
+          <p>127 Quirino hwy., Baesa, Quezon City</p>
+          <p>Phone: <em>(add later)</em></p>
+          <p>Email: <em>(add later)</em></p>
+          <h4>Follow Us</h4>
+          <ul class="social">
+            <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mainstreet Christian Family Church — All rights reserved.</p>
+      <p class="muted">“For God so loved the world…” — John 3:16</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    function closeMenu(){ mobileNav.hidden=true; menuToggle.setAttribute('aria-expanded', 'false') }
+    menuToggle.addEventListener('click', ()=> {
+      const open = !mobileNav.hidden;
+      mobileNav.hidden = open;
+      menuToggle.setAttribute('aria-expanded', String(!open));
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+              </html>
